@@ -104,6 +104,23 @@ namespace UserRegistration
             else
             {
                 Console.WriteLine("Enter valid Password");
+
+
+            }
+
+            //
+            Regex pttrn = new Regex("^(?=.*[a-zA-Z])(?=.*[0-9]).+$");
+            Console.WriteLine("Enter password atleast one Numeric Number");
+            string pass = Console.ReadLine();
+            if (pttrn.IsMatch(pass))
+            {
+                Console.WriteLine("Your password is :" + pass);
+            }
+            else
+            {
+                Console.WriteLine("Enter valid Password");
+
+
             }
         }
     }
