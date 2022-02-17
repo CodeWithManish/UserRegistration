@@ -91,6 +91,20 @@ namespace UserRegistration
             {
                 Console.WriteLine("Enter valid Password");
             }
+
+            //
+            
+            Regex pattern = new Regex("^(?=.*[A-Z]).{8,}$");
+            Console.WriteLine("Enter password minimum 8 characters with one upper case");
+            string pwd = Console.ReadLine();
+            if (pattern.IsMatch(pwd))
+            {
+                Console.WriteLine("Your password is :" + pwd);
+            }
+            else
+            {
+                Console.WriteLine("Enter valid Password");
+            }
         }
     }
 }
