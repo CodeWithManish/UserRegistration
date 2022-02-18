@@ -11,8 +11,11 @@ namespace UserRegistration
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to User Registration.!\n");
-            Registration registration = new Registration();
-            registration.UserData();
+            /*Registration registration = new Registration();
+            registration.UserData();*/
+
+            RegexSample regexSample = new RegexSample();
+            regexSample.Validating();
             Console.ReadKey();
 
         }

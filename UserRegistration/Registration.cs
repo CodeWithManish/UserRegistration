@@ -41,7 +41,7 @@ namespace UserRegistration
                 Console.WriteLine("Please Enter valid Name!");
             }
 
-            //UseCase 3
+            //
 
             string regex1 = "^[a-zA-Z0-9]{3,}[.][a-zA-Z0-9]{3,}[@][a-zA-Z0-9]{2,}[.][a-zA-Z]{2,}[.][a-zA-Z]{2}?$";
             string regex2 = "^[A-Za-z0-9]{3,}[@][A-za-z]{3,}[.][A-Za-z]{3}$";
@@ -61,7 +61,7 @@ namespace UserRegistration
                 Console.WriteLine("Enter valid Email id!");
             }
 
-            //UseCase 4
+            //
 
             Regex regex3 = new Regex("^[+][0-9]{2}[ ][6-9]{1}[0-9]{9}$");
             Console.WriteLine("Enter Contact Number :");
@@ -76,7 +76,7 @@ namespace UserRegistration
                 Console.WriteLine("Enter valid Mobile Number!");
             }
 
-            //UseCase 5
+            //
 
 
             Regex regex4 = new Regex("^[a-zA-Z0-9]{8,}$");
@@ -136,6 +136,9 @@ namespace UserRegistration
                 Console.WriteLine("Enter valid Password");
 
             }
+
+            //
+
         }
     }
 }
